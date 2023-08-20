@@ -14,6 +14,10 @@ function meuEScopo( ) {
     const altura = form.querySelector('.altura');
     
     // Cria um objeto com os valores dos campos e adiciona-o ao array 'pessoas'
+    /**
+     * Esse método pega os valores que o usuário digita exemplo: const nome = form.querySelector('.nome'); e etc
+     * e adicionar no array const pessoas = []
+     */
     pessoas.push({
       nome: nome.value,
       sobrenome: sobrenome.value,
@@ -22,7 +26,10 @@ function meuEScopo( ) {
     });
 
     // Exibe as informações no console e na área de resultado
-    console.log(pessoas);
+    //aqui exibi o objento dentro do array [] => array {} => objeto [{}] => objeto dentro do array
+     console.log(pessoas);
+
+    //aqui vai exibir os resultado na página
     resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} Peso => ${peso.value} Altura => ${altura.value}</p>`
 
   };
