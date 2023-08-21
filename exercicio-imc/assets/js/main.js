@@ -6,7 +6,7 @@ form.addEventListener('submit', function (event) {
   // Impede que o formulário seja realmente enviado, o que é o padrão
   event.preventDefault();
 
-  // Pegando referências para os campos de peso e altura usando os ids "peso" e "altura"
+  // Pegando referências para os campos de peso e altura usando os classes "peso" e "altura"
   const inputPeso = form.querySelector('.peso');
   const inputAltura = form.querySelector('.altura');
 
